@@ -1,0 +1,92 @@
+.leftSidePokedex {
+  background: url("../../images/leftSide.jpg");
+  height: 720px;
+  width: 500px;
+  background-size: cover;
+}
+
+.pokemonImage {
+  background-color: #6ad0ff;
+  width: 345px;
+  height: 233px;
+  position: absolute;
+  border-radius: 5px;
+  margin-top: 220px;
+  margin-left: 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: inset 10px 10px 11px #5cb4dd, inset -10px -10px 11px #5cb4dd;
+          box-shadow: inset 10px 10px 11px #5cb4dd, inset -10px -10px 11px #5cb4dd;
+}
+
+.pokemonImage img {
+  width: 70%;
+  height: 100%;
+}
+
+.leftButtons {
+  height: 50px;
+  width: 110px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 568px;
+  margin-left: 280px;
+}
+
+.leftButtons button {
+  height: 35px;
+  width: 50px;
+  background: none;
+  border: none;
+}
+
+.leftButtons button:hover {
+  cursor: pointer;
+}
+
+.pokemonName {
+  height: 50px;
+  width: 180px;
+  position: absolute;
+  margin-top: 590px;
+  background-color: #f9ee60;
+  margin-left: 53px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pokemonName h2 {
+  font-family: 'Teko', sans-serif;
+  font-size: 40px;
+  margin: 0;
+}
+
+.pokemonSprite {
+  background: url("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png");
+  background-size: cover;
+  background-color: #00aaf7;
+  position: absolute;
+  margin-top: 515px;
+  margin-left: 53px;
+  border-radius: 50px;
+  height: 51px;
+  width: 51px;
+}
+/*# sourceMappingURL=index.css.map */
