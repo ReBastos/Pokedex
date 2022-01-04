@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import apiPokedex from './utils/apiPokedex';
 import LeftSidePokedex from './components/LeftSidePoxedex';
+import RightSidePokedex from './components/RightSidePokedex';
 
 
 function App() {
@@ -27,6 +28,8 @@ function App() {
     pokemonFrontSprite={pokemonFrontSprite}
     pokemonName={pokemonName}
     />
+
+    <RightSidePokedex/>
 
 
     </>
