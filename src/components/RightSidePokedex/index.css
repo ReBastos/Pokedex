@@ -6,4 +6,15 @@
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
+
+.statsCard {
+  background-color: white;
+  position: absolute;
+  margin-top: 155px;
+  margin-left: 54px;
+  height: 90px;
+  width: 354px;
+  border-radius: 15px;
+  opacity: 30%;
+}
 /*# sourceMappingURL=index.css.map */

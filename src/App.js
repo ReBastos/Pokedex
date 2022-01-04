@@ -12,9 +12,19 @@ function App() {
   const [pokemonName, setPokemonName] = useState(null);
   const [pokemonSprite, setPokemonSprite] = useState(null);
   const [pokemonFrontSprite, setPokemonFrontSprite] = useState(null);
+  const [type1, setType1] = useState(null);
+  const [type2, setType2] = useState(null);
+  const [HP, setHP] = useState();
+  const [attack, setAttack] = useState();
+  const [defense, setDefense] = useState();
+  const [specialAtack, setSpecialAttack] = useState();
+  const [specialDefense, setSpecialDefense] = useState();
+  const [speed, setSpeed] = useState();
 
   useEffect(() => {
-    apiPokedex(setPokemonName, setPokemonSprite, setPokemonFrontSprite, pokemonNumber);
+    apiPokedex(setPokemonName, setPokemonSprite, setPokemonFrontSprite, pokemonNumber, setType1, setType2);
+
+    
   } ,[pokemonNumber]);
   
 
@@ -29,7 +39,10 @@ function App() {
     pokemonName={pokemonName}
     />
 
-    <RightSidePokedex/>
+    <RightSidePokedex
+    type1={type1}
+    type2={type2}
+    />
 
 
     </>
