@@ -1,5 +1,5 @@
 import './index.css'
-import TypeComponent from '../TypeComponent'
+import PokemonTypes from '../PokemonTypes'
 
 const RightSidePokedex = () => {
 
@@ -7,7 +7,7 @@ const RightSidePokedex = () => {
         <>
         <div className="rightSidePokedex">
 
-        <TypeComponent/>
+        <PokemonTypes/>
 
         </div>
         </>
