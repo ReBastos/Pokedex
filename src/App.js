@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-    <h1>Teste</h1>
+
     <LeftSidePokedex
     pokemonNumber={pokemonNumber}
     setPokemonNumber={setPokemonNumber}
