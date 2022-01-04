@@ -1,5 +1,23 @@
 .PokemonTypes {
   position: absolute;
-  margin-top: 300px;
+  margin-top: 387px;
+  margin-left: 59px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.typeImg {
+  width: 110px;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 0px 1px #481658;
+          box-shadow: 5px 5px 0px 1px #481658;
 }
 /*# sourceMappingURL=index.css.map */

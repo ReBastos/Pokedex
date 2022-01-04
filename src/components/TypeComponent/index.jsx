@@ -22,7 +22,7 @@ import water from '../../images/types/water.png'
 const TypeComponent = () => {
 
     return(
-        <img src={steel}/>
+        <img src={steel} className='typeImg'/>
     )
 } 
 
