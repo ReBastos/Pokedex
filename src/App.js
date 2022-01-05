@@ -17,12 +17,24 @@ function App() {
   const [HP, setHP] = useState();
   const [attack, setAttack] = useState();
   const [defense, setDefense] = useState();
-  const [specialAtack, setSpecialAttack] = useState();
+  const [specialAttack, setSpecialAttack] = useState();
   const [specialDefense, setSpecialDefense] = useState();
   const [speed, setSpeed] = useState();
 
   useEffect(() => {
-    apiPokedex(setPokemonName, setPokemonSprite, setPokemonFrontSprite, pokemonNumber, setType1, setType2);
+    apiPokedex(setPokemonName, 
+      setPokemonSprite, 
+      setPokemonFrontSprite, 
+      pokemonNumber, 
+      setType1, 
+      setType2,
+      setHP,
+      setAttack,
+      setDefense,
+      setSpecialAttack,
+      setSpecialDefense,
+      setSpeed
+      );
 
     
   } ,[pokemonNumber]);
@@ -31,6 +43,9 @@ function App() {
   return (
     <>
 
+    <img id='title' src='https://fontmeme.com/permalink/220104/976a70d29e50881116e18551c73d1602.png'/>
+
+    <main>
     <LeftSidePokedex
     pokemonNumber={pokemonNumber}
     setPokemonNumber={setPokemonNumber}
@@ -42,8 +57,14 @@ function App() {
     <RightSidePokedex
     type1={type1}
     type2={type2}
+    HP={HP}
+    attack={attack}
+    defense={defense}
+    specialAttack={specialAttack}
+    specialDefense={specialDefense}
+    speed={speed}
     />
-
+  </main>
 
     </>
   );

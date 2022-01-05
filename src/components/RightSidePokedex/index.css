@@ -8,13 +8,37 @@
 }
 
 .statsCard {
-  background-color: white;
+  background-color: #0c1a57;
   position: absolute;
   margin-top: 155px;
   margin-left: 54px;
-  height: 90px;
-  width: 354px;
+  height: 80px;
+  width: 344px;
   border-radius: 15px;
-  opacity: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.statsCard p {
+  line-height: 19px;
+  margin: 0;
+  font-size: 24px;
+  font-family: 'Teko', sans-serif;
+  color: #2cff3e;
+  margin-top: 2px;
 }
 /*# sourceMappingURL=index.css.map */
