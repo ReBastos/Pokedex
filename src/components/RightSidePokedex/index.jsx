@@ -14,8 +14,6 @@ const RightSidePokedex = ({
 
     }) => {
 
-        console.log(HP);
-
         if(HP != undefined && attack != undefined && defense != undefined && specialAttack != undefined && specialDefense != undefined && speed != undefined) {
     return(
         <>
