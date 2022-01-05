@@ -14,6 +14,9 @@ const RightSidePokedex = ({
 
     }) => {
 
+        console.log(HP);
+
+        if(HP != undefined && attack != undefined && defense != undefined && specialAttack != undefined && specialDefense != undefined && speed != undefined) {
     return(
         <>
         <div className="rightSidePokedex">
@@ -22,6 +25,7 @@ const RightSidePokedex = ({
         type1={type1}
         type2={type2}
         />
+
 
 
         <div className='statsCard'>
@@ -35,7 +39,8 @@ const RightSidePokedex = ({
         </div>
         </div>
         </>
-    )
+    )} else{ return(null)}
+    
 
 }
 
