@@ -21,7 +21,7 @@ const RightSidePokedex = ({
         const [evtInput, setEvtInput] = useState(1);
 
         const evtSearch = (evt) => {
-            setEvtInput(evt.target.value);
+            setEvtInput((evt.target.value).toLowerCase());
         }
 
         const sendSearchName = () => {
@@ -55,7 +55,7 @@ const RightSidePokedex = ({
         </div>
 
         <div className='searcher'>
-        <input type={'text'} id='searchInput' onChange={evtSearch}></input>
+        <input type={'text'} id='searchInput' onChange={evtSearch} placeholder='Search...'></input>
         <button id='searchBtn' onClick={sendSearchName}>Search</button>
 
         </div>
