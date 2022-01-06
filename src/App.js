@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import './App.css';
-import apiPokedex from './utils/apiPokedex';
+import {apiPokedexByNumber, apiPokedexBySearch} from './utils/apiPokedex';
 import LeftSidePokedex from './components/LeftSidePoxedex';
 import RightSidePokedex from './components/RightSidePokedex';
 
@@ -20,9 +20,10 @@ function App() {
   const [specialAttack, setSpecialAttack] = useState();
   const [specialDefense, setSpecialDefense] = useState();
   const [speed, setSpeed] = useState();
+  const [valueSearch, setValueSearch] = useState(null);
 
   useEffect(() => {
-    apiPokedex(setPokemonName, 
+    apiPokedexByNumber(setPokemonName, 
       setPokemonSprite, 
       setPokemonFrontSprite, 
       pokemonNumber, 
@@ -62,6 +63,8 @@ function App() {
     specialAttack={specialAttack}
     specialDefense={specialDefense}
     speed={speed}
+    setValueSearch={setValueSearch}
+    setPokemonNumber={setPokemonNumber}
     />
   </main>
 
