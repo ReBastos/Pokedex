@@ -12,20 +12,21 @@ const RightSidePokedex = ({
     specialAttack,
     specialDefense,
     speed,
-    setValueSearch
+    setValueSearch,
+    setOnClick
 
 
     }) => {
 
-        const [evtInput, setEvtInput] = useState();
+        const [evtInput, setEvtInput] = useState(1);
 
         const evtSearch = (evt) => {
             setEvtInput(evt.target.value);
         }
 
-        const sendSearchName = () => {
+        const sendSearchName = (evt) => {
             setValueSearch(evtInput);
-            console.log(evtInput);
+            setOnClick(evt);
         }
 
 
