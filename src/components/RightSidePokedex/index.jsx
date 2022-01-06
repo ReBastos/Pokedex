@@ -13,7 +13,8 @@ const RightSidePokedex = ({
     specialDefense,
     speed,
     setValueSearch,
-    setOnClick
+    setOnClick,
+    setPokemonNumber
 
 
     }) => {
