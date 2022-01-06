@@ -27,8 +27,8 @@ const apiPokedexByNumber = async (
     setSpecialDefense([pokemonJson.stats[4].stat.name, pokemonJson.stats[4].base_stat]);
     setSpeed([pokemonJson.stats[5].stat.name, pokemonJson.stats[5].base_stat]);
     
-    console.clear();
-    console.log(pokemonJson);
+    //console.clear();
+    //console.log(pokemonJson);
     
     if(pokemonJson['types'].length == 1) {
         setType1(pokemonJson['types'][0]['type']['name']);

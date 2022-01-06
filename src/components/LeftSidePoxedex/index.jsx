@@ -22,6 +22,12 @@ const LeftSidePokedex = ({pokemonNumber, setPokemonNumber, pokemonSprite, pokemo
         <>
         <div className="leftSidePokedex">
 
+            <div className='threeLights'>
+                <div id='redLight'></div>
+                <div id='yellowLight'></div>
+                <div id='greenLight'></div>
+            </div>
+
             <div className='pokemonImage'>
                 <img src={pokemonSprite}/>
             </div>
