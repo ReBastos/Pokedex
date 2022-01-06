@@ -21,7 +21,6 @@ function App() {
   const [specialDefense, setSpecialDefense] = useState();
   const [speed, setSpeed] = useState();
   const [valueSearch, setValueSearch] = useState(null);
-  const [onClick, setOnClick] = useState();
 
   useEffect(() => {
     apiPokedexByNumber(setPokemonName, 
@@ -39,24 +38,6 @@ function App() {
       );
 
   } ,[pokemonNumber]);
-  
-  useEffect(() => {
-    apiPokedexBySearch(setPokemonName, 
-      setPokemonSprite, 
-      setPokemonFrontSprite, 
-      pokemonNumber, 
-      setType1, 
-      setType2,
-      setHP,
-      setAttack,
-      setDefense,
-      setSpecialAttack,
-      setSpecialDefense,
-      setSpeed,
-      valueSearch
-      );
-
-  } ,[onClick]);
   
 
   return (
@@ -83,7 +64,7 @@ function App() {
     specialDefense={specialDefense}
     speed={speed}
     setValueSearch={setValueSearch}
-    setOnClick={setOnClick}
+    setPokemonNumber={setPokemonNumber}
     />
   </main>
 

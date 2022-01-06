@@ -13,7 +13,6 @@ const RightSidePokedex = ({
     specialDefense,
     speed,
     setValueSearch,
-    setOnClick,
     setPokemonNumber
 
 
@@ -25,9 +24,10 @@ const RightSidePokedex = ({
             setEvtInput(evt.target.value);
         }
 
-        const sendSearchName = (evt) => {
+        const sendSearchName = () => {
             setValueSearch(evtInput);
-            setOnClick(evt);
+            console.log(evtInput);
+            apiPokedexBySearch(evtInput, setPokemonNumber)
         }
 
 
